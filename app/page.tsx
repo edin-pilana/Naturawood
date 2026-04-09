@@ -1,49 +1,13 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import { Html5QrcodeScanner } from 'html5-qrcode';
 import Papa from 'papaparse';
 import * as XLSX from 'xlsx';
-import {
-  ResponsiveContainer,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Tooltip as RechartsTooltip,
-  CartesianGrid,
-  AreaChart,
-  Area,
-  PieChart,
-  Pie,
-  Cell,
-} from 'recharts';
-import {
-  Card,
-  Text,
-  Metric,
-  List,
-  ListItem,
-  Flex,
-  Badge,
-  Button,
-  Grid,
-  Divider,
-} from '@tremor/react';
-import {
-  Zap,
-  Target,
-  Clock,
-  ArrowRight,
-  FileText,
-  ChevronLeft,
-  ChevronRight,
-  Activity,
-  Search,
-  Bot,
-  UserCircle,
-} from 'lucide-react';
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip as RechartsTooltip, CartesianGrid, AreaChart, Area, PieChart, Pie, Cell } from 'recharts';
+import { Card, Text, Metric, List, ListItem, Flex, Badge, Button, Grid, Divider } from '@tremor/react';
+import { Zap, Target, Clock, ArrowRight, FileText, ChevronLeft, ChevronRight, Activity, Search, Bot, UserCircle } from 'lucide-react';
 
 const SUPABASE_URL = 'https://flzqhmqgrdzcikormzsb.supabase.co';
 const SUPABASE_ANON_KEY =
