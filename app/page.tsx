@@ -2842,7 +2842,7 @@ const printDokument = (
 //===========================================================
 // MODUL: ANALITIKA / DASHBOARD (SPOJENI SVI IZVJEŠTAJI, FINANSIJE I AI)
 // ============================================================================
-export function DashboardModule({ user, onExit }) {
+function DashboardModule({ user, onExit }) {
   const danasnjiDatum = new Date().toISOString().split('T')[0];
   const [activeTab, setActiveTab] = useState('pilana');
   const [tipDatuma, setTipDatuma] = useState('dan');
