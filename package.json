@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/papaparse": "latest",
     "@supabase/supabase-js": "^2.103.0",
     "@tremor/react": "^3.18.7",
     "@types/node": "20.6.2",
